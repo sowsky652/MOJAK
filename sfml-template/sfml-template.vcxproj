@@ -115,7 +115,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>./SFML-2.5.1/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -147,19 +147,39 @@
   <ItemGroup>
     <ClCompile Include="Framework\Framework.cpp" />
     <ClCompile Include="Framework\InputMgr.cpp" />
-    <ClCompile Include="Framework\SoundMgr.cpp" />
+    <ClCompile Include="Framework\Utils.cpp" />
+    <ClCompile Include="GameObject\RailWay.cpp" />
+    <ClCompile Include="GameObject\Item.cpp" />
+    <ClCompile Include="GameObject\Guest.cpp" />
+    <ClCompile Include="Scenes\Map3.cpp" />
+    <ClCompile Include="Scenes\Map2.cpp" />
+    <ClCompile Include="Scenes\Map1.cpp" />
+    <ClCompile Include="Scenes\InGameScene.cpp" />
     <ClCompile Include="Scenes\Scene.cpp" />
     <ClCompile Include="Scenes\SceneMgr.cpp" />
     <ClCompile Include="sfml-template.cpp" />
+    <ClCompile Include="GameObject\Station.cpp" />
+    <ClCompile Include="GameObject\Train.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="3rd\rapidcsv.h" />
+    <ClInclude Include="3rd\Singleton.h" />
     <ClInclude Include="Framework\Framework.h" />
     <ClInclude Include="Framework\InputMgr.h" />
-    <ClInclude Include="Framework\SoundMgr.h" />
+    <ClInclude Include="Framework\Utils.h" />
+    <ClInclude Include="GameObject\RailWay.h" />
+    <ClInclude Include="GameObject\Item.h" />
+    <ClInclude Include="GameObject\Guest.h" />
+    <ClInclude Include="Scenes\Map3.h" />
+    <ClInclude Include="Scenes\Map2.h" />
+    <ClInclude Include="Scenes\Map1.h" />
+    <ClInclude Include="Scenes\InGameScene.h" />
     <ClInclude Include="Scenes\Scene.h" />
     <ClInclude Include="Scenes\SceneMgr.h" />
+    <ClInclude Include="GameObject\Station.h" />
     <ClInclude Include="Third\rapidcsv.h" />
     <ClInclude Include="Third\Singleton.h" />
+    <ClInclude Include="GameObject\Train.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
